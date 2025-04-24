@@ -96,7 +96,7 @@ portfolio-website/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Star_dust87/portfolio-website.git
+   git clone https://github.com/Star-dust87/349.git
    ```
 
 2. **Navigate to the project directory**
@@ -121,7 +121,7 @@ This portfolio is designed to be easily deployed on:
    - Push your repo to GitHub
    - Go to Settings > Pages
    - Select main branch
-   - Your site will be published at `https://star_dust87.github.io/portfolio-website/`
+   - Your site will be published at `https://github.com/Star-dust87/349.git`
 
 2. **Netlify**
    - Connect your GitHub repository
