@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Kim - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Stella Kim</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span class="highlight">Stella Kim</span></h1>
+                    <p class="tagline">Web Developer | UI/UX Designer | Creative Problem Solver</p>
+                    <p class="intro">I build modern, responsive websites and applications that deliver exceptional user experiences.</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn primary-btn">View My Work</a>
+                        <a href="contact.html" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <img src="asset/Avatar.png" alt="Stella Kim" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-category="python">
+                    <div class="project-image">
+                        <img src="asset/mancala.jpg" alt="Mancala Game">
+                    </div>
+                    <div class="project-details">
+                        <h3>Mancala Game with AI</h3>
+                        <p>A command-line implementation of the classic Mancala board game with an intelligent AI opponent using minimax algorithm.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Game Dev</span>
+                        </div>
+                        <a href="mancala-project.html" class="btn small-btn">View Project</a>
+                    </div>
+                </div>
+            <div class="center-btn">
+                <a href="projects.html" class="btn primary-btn">See All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Overview Section -->
+    <section class="skills-overview">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fas fa-server"></i> Express</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Other Skills</h3>
+                    <ul>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                        <li><i class="fas fa-universal-access"></i> Accessibility</li>
+                        <li><i class="fas fa-tasks"></i> Project Management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center-btn">
+                <a href="skills.html" class="btn secondary-btn">View All Skills</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind or just want to connect? Feel free to reach out!</p>
+            <a href="contact.html" class="btn primary-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Stella Kim</h3>
+                    <p>Web Developer & Designer</p>
+                    <p>Based in Lake Forest, CA</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Star-dust87" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:skim28@csu.fullerton.edu"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stella Kim. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

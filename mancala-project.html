@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mancala Game - Projects | Stella Kim</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-detail-page {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .project-header {
+            margin-bottom: 40px;
+        }
+        
+        .project-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .project-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+        }
+        
+        .project-tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .tech-tag {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-color);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project-banner {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            border-radius: var(--radius);
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        .project-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .project-content {
+            line-height: 1.8;
+        }
+        
+        .project-content h3 {
+            font-size: 1.8rem;
+            margin: 30px 0 15px;
+            color: var(--secondary-color);
+        }
+        
+        .project-content p {
+            margin-bottom: 20px;
+        }
+        
+        .project-content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            list-style: disc;
+        }
+        
+        .project-content ul li {
+            margin-bottom: 10px;
+        }
+        
+        .project-content pre {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            border: 1px solid #eaeaea;
+        }
+        
+        .project-content code {
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        
+        .project-screenshots {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .screenshot {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
+        }
+        
+        .screenshot img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .related-projects {
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .related-projects h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .related-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .ascii-game-board {
+            font-family: monospace;
+            white-space: pre;
+            line-height: 1.4;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            overflow-x: auto;
+            border: 1px solid #eaeaea;
+        }
+        
+        @media (max-width: 768px) {
+            .project-screenshots {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-banner {
+                height: 250px;
+            }
+            
+            .project-header h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Stella Kim</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-detail-section">
+        <div class="container">
+            <div class="project-detail-page">
+                <div class="project-header animate-on-scroll">
+                    <h2>Mancala Game with AI</h2>
+                    
+                    <div class="project-meta">
+                        <div class="project-meta-item">
+                            <i class="far fa-calendar"></i>
+                            <span>Completed: April 2025</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="far fa-clock"></i>
+                            <span>Duration: 3 weeks</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i class="far fa-user"></i>
+                            <span>Role: Developer</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Game Development</span>
+                        <span class="tech-tag">Minimax Algorithm</span>
+                        <span class="tech-tag">Alpha-Beta Pruning</span>
+                    </div>
+                </div>
+                
+                <div class="project-banner animate-on-scroll">
+                    <img src="asset/mancala.jpg" alt="Mancala Game">
+                </div>
+                
+                <div class="project-content animate-on-scroll">
+                    <h3>Project Overview</h3>
+                    <p>This project is a command-line implementation of the classic board game Mancala with an intelligent AI opponent. The game features multiple modes including human vs. human, human vs. AI, and AI vs. AI gameplay. The AI uses the minimax algorithm with alpha-beta pruning to make strategic decisions at varying difficulty levels.</p>
+                    
+                    <p>Mancala is one of the oldest known games in the world, dating back to ancient Egypt. The game is a perfect candidate for AI implementation because it involves strategic thinking and forward planning, making it an excellent demonstration of search algorithms and game theory.</p>
+                    
+                    <h3>Game Display</h3>
+                    <p>The game features an ASCII art representation of the Mancala board in the console:</p>
+                    
+                    <div class="ascii-game-board">
++------+------+--<<<<<-Player 2----+------+------+------+
+2      |G     |H     |I     |J     |K     |L     |      1
+       |  04  |  04  |  04  |  04  |  04  |  04  |
+S      |      |      |      |      |      |      |      S
+T  00  +------+------+------+------+------+------+  00  T
+O      |A     |B     |C     |D     |E     |F     |      O
+R      |  04  |  04  |  04  |  04  |  04  |  04  |      R
+E      |      |      |      |      |      |      |      E
++------+------+------+-Player 1->>>>>-----+------+------+
+</div>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Multiple Game Modes:</strong> Support for human vs. human, human vs. AI, and AI vs. AI gameplay.</li>
+                        <li><strong>Intelligent AI:</strong> Implementation of the minimax algorithm with alpha-beta pruning for efficient decision making.</li>
+                        <li><strong>Difficulty Levels:</strong> Three AI difficulty settings (easy, medium, hard) that adjust the search depth and randomness of moves.</li>
+                        <li><strong>Complete Rule Implementation:</strong> All Mancala rules including extra turns, capturing, and end-game conditions.</li>
+                        <li><strong>Clear User Interface:</strong> ASCII art board display and intuitive command line interface.</li>
+                        <li><strong>Comprehensive Documentation:</strong> In-game rules guide and clear instructions.</li>
+                    </ul>
+                    
+                    <h3>Technical Implementation</h3>
+                    <p>The game is structured using object-oriented programming principles with two main classes:</p>
+                    
+                    <ol>
+                        <li><strong>MancalaGame:</strong> Handles the game logic, board state, and player interactions.</li>
+                        <li><strong>MancalaAI:</strong> Implements the AI opponent using the minimax algorithm.</li>
+                    </ol>
+                    
+                    <p>The minimax algorithm with alpha-beta pruning allows the AI to look ahead several moves and choose the optimal play. The evaluation function considers multiple factors including:</p>
+                    
+                    <ul>
+                        <li>Seeds in the player's store (main scoring mechanism)</li>
+                        <li>Seeds in the player's pits (available moves)</li>
+                        <li>Empty pits (potential for capture)</li>
+                        <li>Strategic pit positions (pits closer to the store are weighted higher)</li>
+                    </ul>
+                    
+                    <h3>AI Implementation Highlight</h3>
+                    <p>The core of the AI decision-making process is implemented in the minimax function:</p>
+                    
+<pre><code>def minimax(self, board, depth, alpha, beta, maximizing_player, player):
+    """Minimax algorithm with alpha-beta pruning"""
+    if depth == 0 or checkForWinner(board) != 'no winner':
+        return self.evaluate_board(board, player), None
+
+    valid_moves = self.get_valid_moves(board, '1' if maximizing_player else '2')
+    if not valid_moves:
+        return self.evaluate_board(board, player), None
+
+    best_move = valid_moves[0]
+    if maximizing_player:
+        max_eval = float('-inf')
+        for move in valid_moves:
+            board_copy = deepcopy(board)
+            next_player = makeMove(board_copy, '1', move)
+            eval_score, _ = self.minimax(board_copy, depth - 1, alpha, beta, 
+                                      next_player == '1', player)
+            if eval_score > max_eval:
+                max_eval = eval_score
+                best_move = move
+            alpha = max(alpha, eval_score)
+            if beta <= alpha:
+                break
+        return max_eval, best_move
+    else:
+        min_eval = float('inf')
+        for move in valid_moves:
+            board_copy = deepcopy(board)
+            next_player = makeMove(board_copy, '2', move)
+            eval_score, _ = self.minimax(board_copy, depth - 1, alpha, beta,
+                                      next_player == '1', player)
+            if eval_score < min_eval:
+                min_eval = eval_score
+                best_move = move
+            beta = min(beta, eval_score)
+            if beta <= alpha:
+                break
+        return min_eval, best_move</code></pre>
+                    
+                    <h3>Challenges & Solutions</h3>
+                    <p>One of the main challenges in implementing this game was creating an effective evaluation function for the AI. The game of Mancala has many subtle strategic elements that are difficult to quantify. I addressed this by:</p>
+                    
+                    <ol>
+                        <li>Analyzing existing Mancala strategies and common patterns.</li>
+                        <li>Implementing a weighted scoring system that considers multiple factors.</li>
+                        <li>Testing and refining the evaluation function through repeated gameplay.</li>
+                        <li>Adding positional weighting to prioritize certain pits over others.</li>
+                    </ol>
+                    
+                    <p>Another challenge was optimizing the AI to make decisions in a reasonable amount of time. The minimax algorithm's complexity grows exponentially with depth, so I implemented alpha-beta pruning to significantly reduce the number of nodes evaluated.</p>
+                    
+                    <h3>Game Flow</h3>
+                    <p>The gameplay experience follows this sequence:</p>
+                    
+                    <ol>
+                        <li>Game starts with a welcome message and rules display.</li>
+                        <li>Player selects game mode (human vs. human, human vs. AI, AI vs. AI).</li>
+                        <li>If playing against AI, player selects difficulty level.</li>
+                        <li>The game loop begins, displaying the board and prompting for moves.</li>
+                        <li>Players take turns until one side has no seeds left.</li>
+                        <li>Final score is calculated and a winner is declared.</li>
+                    </ol>
+                    
+                    <h3>Future Enhancements</h3>
+                    <p>While the current implementation is fully functional, there are several potential enhancements for future versions:</p>
+                    
+                    <ul>
+                        <li>Graphical user interface using a library like Pygame.</li>
+                        <li>Network play capabilities for remote opponents.</li>
+                        <li>Advanced AI using machine learning techniques.</li>
+                        <li>Game state saving and loading functionality.</li>
+                        <li>Additional Mancala variants and rule sets.</li>
+                    </ul>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/mancala-game" target="_blank" class="btn primary-btn">View Source Code</a>
+                        <a href="asset/mancala2.py" class="btn secondary-btn">Download Project</a>
+                    </div>
+                </div>
+                
+               
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Stella Kim</h3>
+                    <p>Web Developer & Designer</p>
+                    <p>Based in Lake Forest, CA</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Star-dust87" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:skim28@csu.fullerton.edu"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stella Kim. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-container {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        
+        .about-image {
+            flex: 1;
+            max-width: 400px;
+        }
+        
+        .about-image img {
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .about-content {
+            flex: 1.5;
+        }
+        
+        .about-content h2 {
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+        
+        .education-experience {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .education, .experience {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .education h3, .experience h3 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .education h3::after, .experience h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 7px;
+            width: 1px;
+            height: calc(100% + 10px);
+            background-color: rgba(52, 152, 219, 0.3);
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .timeline-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-item .time {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+        
+        .resume-download {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .interests-section {
+            background-color: var(--light-color);
+            padding: 50px 0;
+            border-radius: var(--radius);
+        }
+        
+        .interests-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .interest-item {
+            text-align: center;
+            width: 120px;
+        }
+        
+        .interest-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            transition: var(--transition);
+        }
+        
+        .interest-item:hover .interest-icon {
+            transform: translateY(-5px);
+            color: var(--accent-color);
+        }
+        
+        @media (max-width: 992px) {
+            .about-container {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .timeline-item {
+                padding-left: 25px;
+            }
+            
+            .timeline-item::before {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Stella Kim</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h1 class="section-title">About Me</h1>
+            
+            <div class="about-container">
+                <div class="about-image animate-on-scroll">
+                    <img src="asset/IMG-8231.JPEG" alt="Stella Kim">
+                </div>
+                
+                <div class="about-content animate-on-scroll">
+                    <h2>Hello, I'm <span class="highlight">Stella Kim</span></h2>
+                    <p>I am a passionate computer science major at California State University of Fullerton who is looking to expand my horizon and develop my skills</p>
+                    
+                    <p>My journey in computer science began when I was in college, where I first discovered my passion for coding. Since then, I've worked on numerous projects for school and part-time work, always striving to deliver high-quality solutions.</p>
+                    
+                    <p>I believe in writing clean, maintainable code and staying updated with the latest trends and technologies. When I'm not coding, you can find me exploring new hiking trails, reading science fiction novels, or experimenting with new recipes in the kitchen.</p>
+                </div>
+            </div>
+            
+            <div class="education-experience">
+                <div class="education animate-on-scroll">
+                    <h3>Education</h3>
+                    
+                    <div class="timeline-item">
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <div class="time">Califonia State University of Fullerton, 2021 - Present</div>
+                        <p>Hoping to graduate with a firm grasp in software engineering.</p>
+                    </div>
+                    
+                
+                <div class="experience animate-on-scroll">
+                    <h3>Experience</h3>
+                    
+                    <div class="timeline-item">
+                        <h4>Technical Advisor</h4>
+                        <div class="time">Starway General Insurance, 2010 - Present</div>
+                        <p>Advising and setting up computers and systems. Also solving technical issues that come up.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h4>Administrative Assistant</h4>
+                        <div class="time">Commodore LLC, 2009 - 2011</div>
+                        <p>Was responsible for data entry, office scheduling, and accounting.</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <h4>Administrative Assistant</h4>
+                        <div class="time">Starway General Insurance, 2007 - 2008</div>
+                        <p>Data entry of confidential client information, client communication, and communication with other associated companies.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-download animate-on-scroll">
+                <a href="Stella Kim Resume.pdf" class="btn primary-btn" download>Download Resume <i class="fas fa-download"></i></a>
+            </div>
+            
+            <div class="interests-section animate-on-scroll">
+                <h3 class="section-title">My Interests</h3>
+                
+                <div class="interests-container">
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Coding</h4>
+                    </div>
+                    
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h4>Hiking</h4>
+                    </div>
+                    
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>Reading</h4>
+                    </div>
+                    
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h4>Photography</h4>
+                    </div>
+                    
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Travel</h4>
+                    </div>
+                    
+                    <div class="interest-item">
+                        <div class="interest-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Cooking</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Stella Kim</h3>
+                    <p>Web Developer & Designer</p>
+                    <p>Based in Lake Forest, CA</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Star-dust87" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:skim28@csu.fullerton.edu"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stella Kim. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
